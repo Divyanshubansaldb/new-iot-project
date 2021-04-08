@@ -25,7 +25,7 @@ class VideoCamera(object):
         # from a webcam, comment the line below out and use a video file
         # instead.
 
-        self.stream = WebcamVideoStream(-1).start()
+        self.stream = WebcamVideoStream(src=0).start()
 
     def __del__(self):
         self.stream.stop()
