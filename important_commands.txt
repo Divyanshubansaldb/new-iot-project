@@ -1,0 +1,4 @@
+for making requirements.txt use this command :-
+pip freeze > requirements.txt  # Python2
+
+web: gunicorn app:app
