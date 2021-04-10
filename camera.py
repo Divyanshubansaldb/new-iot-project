@@ -24,8 +24,8 @@ class VideoCamera(object):
         # Using OpenCV to capture from device 0. If you have trouble capturing
         # from a webcam, comment the line below out and use a video file
         # instead.
-
-        self.stream = WebcamVideoStream(src=0).start()
+# http://81.83.10.9:8001/mjpg/video.mjpg
+        self.stream = WebcamVideoStream('http://158.58.130.148/mjpg/video.mjpg').start()
 
     def __del__(self):
         self.stream.stop()

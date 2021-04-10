@@ -1,2 +1,1 @@
 libgl1
-modprobe bcm2835-v4l2
