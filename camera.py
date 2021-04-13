@@ -25,7 +25,8 @@ class VideoCamera(object):
         # from a webcam, comment the line below out and use a video file
         # instead.
 # http://81.83.10.9:8001/mjpg/video.mjpg
-        self.stream = WebcamVideoStream('http://158.58.130.148/mjpg/video.mjpg').start()
+# http://158.58.130.148/mjpg/video.mjpg
+        self.stream = WebcamVideoStream('http://77.243.103.105:8081/mjpg/video.mjpg').start()
 
     def __del__(self):
         self.stream.stop()
